@@ -10,19 +10,14 @@ namespace HCGStudio.SystemRefresher.Core.Software
     public record SoftwareRestore
     {
         /// <summary>
-        ///     Name of the software.
+        ///     Display name of the software.
         /// </summary>
-        public string Name { get; init; } = string.Empty;
+        public string DisplayName { get; init; } = string.Empty;
 
         /// <summary>
         ///     Installation method of the software.
         /// </summary>
         public SoftwareType Type { get; init; }
-
-        /// <summary>
-        ///     Package manager to install the software.
-        /// </summary>
-        public PackageManagerType PackageManager { get; init; }
 
         /// <summary>
         ///     Files required to download before installation.

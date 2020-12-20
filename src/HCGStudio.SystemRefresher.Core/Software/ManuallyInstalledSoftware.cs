@@ -1,7 +1,7 @@
 ﻿namespace HCGStudio.SystemRefresher.Core.Software
 {
     /// <summary>
-    ///     Record contains a software to be manually installed.
+    ///     Record contains a software to install manually.
     /// </summary>
     public record ManuallyInstalledSoftware : SoftwareRestore
     {

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCGStudio.SystemRefresher.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCGStudio.SystemRefresher.App", "src\HCGStudio.SystemRefresher.App\HCGStudio.SystemRefresher.App.csproj", "{FB70D10A-D57F-410D-A4CE-DE0A6F0EC4A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCGStudio.SystemRefresher.ManualTest", "src\HCGStudio.SystemRefresher.ManualTest\HCGStudio.SystemRefresher.ManualTest.csproj", "{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +48,22 @@ Global
 		{FB70D10A-D57F-410D-A4CE-DE0A6F0EC4A5}.Release|x64.Build.0 = Release|Any CPU
 		{FB70D10A-D57F-410D-A4CE-DE0A6F0EC4A5}.Release|x86.ActiveCfg = Release|Any CPU
 		{FB70D10A-D57F-410D-A4CE-DE0A6F0EC4A5}.Release|x86.Build.0 = Release|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Release|x64.Build.0 = Release|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{29BEF634-D18D-440F-9934-7CF213710488} = {8F0A059D-8DC2-4931-9EC3-34F7361E3A01}
 		{FB70D10A-D57F-410D-A4CE-DE0A6F0EC4A5} = {8F0A059D-8DC2-4931-9EC3-34F7361E3A01}
+		{CF8303D3-46FF-4D7D-ACE8-05D9AF52B3E5} = {8F0A059D-8DC2-4931-9EC3-34F7361E3A01}
 	EndGlobalSection
 EndGlobal

@@ -21,7 +21,7 @@ namespace HCGStudio.SystemRefresher.Core.Scanner
 
         public override List<VcPkgInstalledPackage> ScanSoftware()
         {
-            Logger.LogTrace("Find vcpkg in path.");
+            Logger.LogTrace("Finding vcpkg in path.");
 
             var path = Environment.GetEnvironmentVariable("Path");
             if (path == null)
@@ -30,7 +30,7 @@ namespace HCGStudio.SystemRefresher.Core.Scanner
                 throw new NullReferenceException();
             }
 
-            var splitPath = path.Split(':');
+            var splitPath = path.Split(';');
             var vcpkgExecute = splitPath.Select(p => Path.Combine(p, "vcpkg.exe")).FirstOrDefault(File.Exists);
 
             if (vcpkgExecute != null)

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HCGStudio.SystemRefresher.App.ViewModels
+﻿namespace HCGStudio.SystemRefresher.App.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {

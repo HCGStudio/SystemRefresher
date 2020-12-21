@@ -7,14 +7,22 @@ using Microsoft.Extensions.Logging;
 
 namespace HCGStudio.SystemRefresher.Core.Scanner
 {
-    public abstract class VcPkgScanner : ISoftwareScanner<VcPkgInstalledPackage>
+    public abstract class VcPkgScanner : ISoftwareScanner
     {
         protected abstract ILogger? Logger { get; }
+
+        List<SoftwareRestore> ISoftwareScanner.ScanSoftware()
+        {
+            return ScanSoftware().Cast<SoftwareRestore>().ToList();
+        }
+
         public abstract List<VcPkgInstalledPackage> ScanSoftware();
 
         protected List<VcPkgInstalledPackage> ListPackageFromProcess(string path)
         {
-            using var vcpkg = Process.Start(new ProcessStartInfo(path, "install")
+            Logger.LogTrace($"Vcpkg found at {path}.");
+            using var vcpkg = Process.Start(new ProcessStartInfo(path,
+                "list")
             {
                 RedirectStandardOutput = true
             });
